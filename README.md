@@ -1,6 +1,6 @@
 # Time event detection using LSTM architecture
 - This code is the second stage of whole project called "Realtime event detection using deep learning technique" [here](http://sclab.cafe24.com/publications/Proposal%20final4.pdf)
-- As our proposed system, the output of CNN based model will be accumulated tweet data whichplay  a  role  as  the  input  of  event  detection  model.  Typically,  this  time  series  data  look  likeunderlying  discrete  signal.  Value  of  each  signal  is  accumulated  frequency  of  tweets  in  giveninterval. The moving average can be used to filter noise in time series data. Our problem is similarto anomaly detection, novel detection, that also makes sense for the case of disaster event detection.The LSTM based prediction model refer to given current and past data to estimate next time pointin the time-series. Then, the errors distribution is used to event detection model which are built by anomaly likelihood.
+- As our proposed system, the output of CNN based model will be accumulated tweet data which play  a  role  as  the  input  of  event  detection  model.  Typically,  this  time  series  data  look  like underlying  discrete  signal.  Value  of  each  signal  is  accumulated  frequency  of  tweets  in  given interval. The moving average can be used to filter noise in time series data. Our problem is similarto anomaly detection, novel detection, that also makes sense for the case of disaster event detection.The LSTM based prediction model refer to given current and past data to estimate next time pointin the time-series. Then, the errors distribution is used to event detection model which are built by anomaly likelihood.
 
 ----
 ## Requirements
@@ -9,16 +9,15 @@
 - sickit-learn 
 - GPyOpt
 
-
 ----
 ## Running
 - Step1: Configuration: 
     - First set the configuration settings in `configuration/config.py`.
         - Xserver is set as True
         - experiment_id: example `Result of running LSTM 2` with input data is `Earthquake1` 
-        - data_folder: example `data_folder': 'resources/data/earthquake/Earthquake2/`
+        - data_folder: example `data_folder: resources/data/earthquake/Earthquake2/`
     - Parametter of LSTM in `configuration/multi_step_lstm_config`.
-        - bathsize, look back, look aheed,....
+        - bath size, look back, look aheed,....
         - Architecture
         <img src="https://github.com/quanap5/time-lstm-eventdetection/blob/master/imgs/Result%20of%20running%20LSTM%202_lstm.png">
 
