@@ -19,7 +19,8 @@
         - data_folder: example `data_folder': 'resources/data/earthquake/Earthquake2/`
     - Parametter of LSTM in `configuration/multi_step_lstm_config`.
         - bathsize, look back, look aheed,....
-        - Architecture [here]()
+        - Architecture
+        <img src="https://github.com/quanap5/time-lstm-eventdetection/blob/master/imgs/Result%20of%20running%20LSTM%202_lstm.png">
 
 - Step2: Data Pre-processing:
     - We need form raw data to turn to proper format for LSTM architecture that refer to
@@ -34,3 +35,4 @@ look back and look head.
 
 - Step3: 
     - Comeback notebook folder and run the rest of code to time event detection and perform visualization.
+    - [Example](https://github.com/quanap5/time-lstm-eventdetection/blob/master/notebooks/earthquake2%20tweets_v2.pdf)
